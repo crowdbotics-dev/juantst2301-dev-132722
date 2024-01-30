@@ -29,6 +29,24 @@ function api_v1_newmo_partial_update(payload) {
 function api_v1_newmo_destroy(payload) {
   return juantstdevAPI.delete(`/api/v1/newmo/${payload.id}/`)
 }
+function api_v1_rojo_list(payload) {
+  return juantstdevAPI.get(`/api/v1/rojo/`)
+}
+function api_v1_rojo_create(payload) {
+  return juantstdevAPI.post(`/api/v1/rojo/`, payload)
+}
+function api_v1_rojo_retrieve(payload) {
+  return juantstdevAPI.get(`/api/v1/rojo/${payload.id}/`)
+}
+function api_v1_rojo_update(payload) {
+  return juantstdevAPI.put(`/api/v1/rojo/${payload.id}/`, payload)
+}
+function api_v1_rojo_partial_update(payload) {
+  return juantstdevAPI.patch(`/api/v1/rojo/${payload.id}/`, payload)
+}
+function api_v1_rojo_destroy(payload) {
+  return juantstdevAPI.delete(`/api/v1/rojo/${payload.id}/`)
+}
 function api_v1_signup_create(payload) {
   return juantstdevAPI.post(`/api/v1/signup/`, payload)
 }
@@ -74,6 +92,12 @@ export const apiService = {
   api_v1_newmo_update,
   api_v1_newmo_partial_update,
   api_v1_newmo_destroy,
+  api_v1_rojo_list,
+  api_v1_rojo_create,
+  api_v1_rojo_retrieve,
+  api_v1_rojo_update,
+  api_v1_rojo_partial_update,
+  api_v1_rojo_destroy,
   api_v1_signup_create,
   rest_auth_login_create,
   rest_auth_logout_create,
