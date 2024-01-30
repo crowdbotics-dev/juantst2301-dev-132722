@@ -4,18 +4,25 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('home', '0003_rojo'),
+        ("home", "0003_rojo"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Newmo2',
+            name="Newmo2",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('aaaa', models.BigIntegerField()),
-                ('vxx', models.BigIntegerField()),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("aaaa", models.BigIntegerField()),
+                ("vxx", models.BigIntegerField()),
             ],
         ),
     ]

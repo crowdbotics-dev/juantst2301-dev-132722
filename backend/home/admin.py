@@ -1,8 +1,6 @@
 from django.contrib import admin
-from .models import Newmo, Newmo2, Rojo
+from .models import Newmo3
 
-admin.site.register(Newmo)
-admin.site.register(Rojo)
-admin.site.register(Newmo2)
+admin.site.register(Newmo3)
 
 # Register your models here.

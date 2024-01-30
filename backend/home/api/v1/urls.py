@@ -4,15 +4,10 @@ from .viewsets import (
     NewmoViewSet,
     RojoViewSet,
     Newmo2ViewSet,
-    NewmoViewSet,
-    Newmo2ViewSet,
-    RojoViewSet,
-    NewmoViewSet,
-    Newmo2ViewSet,
-    RojoViewSet,
-    NewmoViewSet,
-    Newmo2ViewSet,
-    RojoViewSet,
+    Newmo3ViewSet,
+    Newmo3ViewSet,
+    Newmo3ViewSet,
+    Newmo3ViewSet,
 )
 
 from home.api.v1.viewsets import (
@@ -26,6 +21,7 @@ router.register("login", LoginViewSet, basename="login")
 router.register("newmo", NewmoViewSet)
 router.register("rojo", RojoViewSet)
 router.register("newmo2", Newmo2ViewSet)
+router.register("newmo3", Newmo3ViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
