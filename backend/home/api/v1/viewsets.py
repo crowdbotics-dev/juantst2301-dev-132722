@@ -1,6 +1,13 @@
 from rest_framework import viewsets
-from home.models import Newmo, Newmo, Newmo
-from .serializers import NewmoSerializer, NewmoSerializer, NewmoSerializer
+from home.models import Newmo, Rojo, Newmo, Rojo, Newmo, Rojo
+from .serializers import (
+    NewmoSerializer,
+    RojoSerializer,
+    NewmoSerializer,
+    RojoSerializer,
+    NewmoSerializer,
+    RojoSerializer,
+)
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -41,3 +48,12 @@ class NewmoViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Newmo.objects.all()
+
+
+class RojoViewSet(viewsets.ModelViewSet):
+    serializer_class = RojoSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = Rojo.objects.all()

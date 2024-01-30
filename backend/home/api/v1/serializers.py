@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import Newmo, Newmo
+from home.models import Newmo, Rojo, Newmo, Rojo
 from django.http import HttpRequest
 from django.utils.translation import gettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -79,4 +79,10 @@ class PasswordSerializer(PasswordResetSerializer):
 class NewmoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Newmo
+        fields = "__all__"
+
+
+class RojoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Rojo
         fields = "__all__"
