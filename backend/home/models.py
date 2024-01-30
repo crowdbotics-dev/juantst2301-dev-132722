@@ -11,3 +11,9 @@ class Newmo(models.Model):
 class Rojo(models.Model):
     "Generated Model"
     ca = models.BigIntegerField()
+
+
+class Newmo2(models.Model):
+    "Generated Model"
+    aaaa = models.BigIntegerField()
+    vxx = models.BigIntegerField()
