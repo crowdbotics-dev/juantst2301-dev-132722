@@ -29,6 +29,24 @@ function api_v1_newmo_partial_update(payload) {
 function api_v1_newmo_destroy(payload) {
   return juantstdevAPI.delete(`/api/v1/newmo/${payload.id}/`)
 }
+function api_v1_newmo2_list(payload) {
+  return juantstdevAPI.get(`/api/v1/newmo2/`)
+}
+function api_v1_newmo2_create(payload) {
+  return juantstdevAPI.post(`/api/v1/newmo2/`, payload)
+}
+function api_v1_newmo2_retrieve(payload) {
+  return juantstdevAPI.get(`/api/v1/newmo2/${payload.id}/`)
+}
+function api_v1_newmo2_update(payload) {
+  return juantstdevAPI.put(`/api/v1/newmo2/${payload.id}/`, payload)
+}
+function api_v1_newmo2_partial_update(payload) {
+  return juantstdevAPI.patch(`/api/v1/newmo2/${payload.id}/`, payload)
+}
+function api_v1_newmo2_destroy(payload) {
+  return juantstdevAPI.delete(`/api/v1/newmo2/${payload.id}/`)
+}
 function api_v1_rojo_list(payload) {
   return juantstdevAPI.get(`/api/v1/rojo/`)
 }
@@ -92,6 +110,12 @@ export const apiService = {
   api_v1_newmo_update,
   api_v1_newmo_partial_update,
   api_v1_newmo_destroy,
+  api_v1_newmo2_list,
+  api_v1_newmo2_create,
+  api_v1_newmo2_retrieve,
+  api_v1_newmo2_update,
+  api_v1_newmo2_partial_update,
+  api_v1_newmo2_destroy,
   api_v1_rojo_list,
   api_v1_rojo_create,
   api_v1_rojo_retrieve,
